@@ -3,13 +3,17 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.marcadorapp.ScoreboardApp
+import com.example.marcadorapp.ui.theme.MarcadorAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+        MarcadorAppTheme {
             ScoreboardApp()
+        }
+
         }
     }
 }
