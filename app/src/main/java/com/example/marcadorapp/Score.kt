@@ -36,8 +36,6 @@ fun ScoreboardApp() {
         modifier = Modifier
             .fillMaxSize()
     ) {
-
-
         // Panel del Equipo 1
         Box(
             modifier = Modifier
