@@ -1,4 +1,4 @@
-package com.example.marcadorapp
+package com.example.marcadorapp.views
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,11 +23,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable
-fun ScoreboardApp() {
+fun ScoreboardApp(navController: NavController) {
     var scoreTeam1 by remember { mutableStateOf(0) }
     var scoreTeam2 by remember { mutableStateOf(0) }
 

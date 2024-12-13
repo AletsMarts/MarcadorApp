@@ -48,7 +48,7 @@ fun OnBoardingPager(
                     )
                     Text (
                         text = item[page].titulo,
-                        modifier = Modifier.padding(top = 50.dp),
+                        modifier = Modifier.padding(top = 25.dp),
                         color = Color.Black,
                         style = MaterialTheme.typography.displayMedium,
                         fontWeight = FontWeight.Bold

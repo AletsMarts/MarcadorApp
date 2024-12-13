@@ -22,14 +22,14 @@ fun MainOnBoarding(navController: NavController, store: StoreBoarding){
     items.add(
         PageData(
             R.raw.page1,
-            titulo ="Bienvenido",
+            titulo ="Bienvenido a VolleyMate",
             descripcion = "Descripcion 2 - Deslizar para continuar"
         )
     )
 
     items.add(
         PageData(R.raw.page2,
-            titulo = "Aplicacion Boarding",
+            titulo = "Aplicacion Para registrar datos de sus partidos favoritos",
             descripcion = "Descripción 2 - Deslizar para continuar")
     )
 

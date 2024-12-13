@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.background
             ){
-                LogoView() //Esto es el splash de Alejandro
+                //LogoView() //Esto es el splash de Alejandro
                 NavManager() //Esto es el navManager qu yo añadi
             }
         }

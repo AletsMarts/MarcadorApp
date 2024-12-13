@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 fun PagerIndicator(size:Int,currentPage:Int){
     Row(
         horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier.padding(top = 60.dp)
+        modifier = Modifier.padding(top = 15.dp)
     ){
         repeat(size){
             Indicator(isSelect = it==currentPage)

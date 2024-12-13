@@ -11,7 +11,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.marcadorapp.dataStore.StoreBoarding
 import com.example.marcadorapp.OnBoardViews.MainOnBoarding
+import com.example.marcadorapp.splashscreen.LogoView
 import com.example.marcadorapp.views.HomeView
+import com.example.marcadorapp.views.ScoreboardApp
 import com.example.marcadorapp.views.SplashScreen
 
 @Composable
@@ -28,10 +30,10 @@ fun NavManager(){
             MainOnBoarding(navController,dataStore)
         }
         composable("home"){
-            HomeView(navController)
+            ScoreboardApp(navController)
         }
         composable("Splash"){
-            SplashScreen(navController, store.value==true)
+            LogoView(navController, store.value==true)
         }
     }
 }

@@ -35,6 +35,6 @@ fun SplashScreen(navController: NavController, store: Boolean){
         * Splash y no se empalmen ambos
         * */
 
-        //Image(painter = painterResource(id=R.drawable.page1), contentDescription = "Logo")
+        //Image(painter = painterResource(id=R.drawable.logo), contentDescription = "Logo")
     }
 }
