@@ -1,6 +1,7 @@
 package com.example.marcadorapp.views
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -43,6 +44,7 @@ fun RegisterMatchScreen(navController: NavController) {
             textAlign = TextAlign.Left,
             modifier = Modifier
                 .padding(bottom = 8.dp)
+
         )
 
         // Subtítulo
@@ -78,9 +80,9 @@ fun RegisterMatchScreen(navController: NavController) {
                 .background(Color(0xFF99E0F4))
         )
 
-        // Botón para Registrar Partido
+
         Button(
-            onClick = { /* Acción al presionar Registrar Partido */ },
+            onClick = { navController.navigate("ScoreView")},
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp)

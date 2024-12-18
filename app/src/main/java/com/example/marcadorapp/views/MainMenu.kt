@@ -91,7 +91,7 @@ fun MainScreen(navController: NavController) {
             MenuButton(
                 iconRes = R.drawable.ic_eye,
                 text = "Acerca de ...",
-                onClick = { navController.navigate("About") }
+                onClick = { navController.navigate("AboutScreen") }
             )
             // Botón Historial de partidos
             MenuButton(

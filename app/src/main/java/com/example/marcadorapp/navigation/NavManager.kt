@@ -19,6 +19,7 @@ import com.example.marcadorapp.views.FinalResultsScreen
 import com.example.marcadorapp.views.FinalResultsScreen
 import com.example.marcadorapp.views.MatchRecordScreen
 import com.example.marcadorapp.views.MatchHistoryScreen
+import com.example.marcadorapp.views.AboutScreen
 
 @Composable
 fun NavManager(){
@@ -56,6 +57,9 @@ fun NavManager(){
         }
         composable("DetalleHistorialPartido") {
             MatchRecordScreen(navController)
+        }
+        composable("AboutScreen") {
+            AboutScreen(navController) // Pantalla de "Acerca de"
         }
     }
 }
