@@ -45,7 +45,7 @@ fun NavManager(){
         composable("home"){
             MainScreen(navController)
         }
-        composable("RegistrarPartido1") {
+        composable("RegistrarPartido") {
             RegisterMatchScreen(navController)
         }
         composable("GanadorSet") {
