@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
-
+//PRUEBA
 //@Preview(showBackground = true)
 @Composable
 fun ScoreboardApp(navController: NavController) {
