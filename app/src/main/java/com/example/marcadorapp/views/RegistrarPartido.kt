@@ -14,6 +14,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 
 @Composable
@@ -93,4 +95,10 @@ fun RegisterMatchScreen(navController: NavController) {
             )
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun RegisterMatchScreenPreview() {
+    RegisterMatchScreen(navController = NavController(LocalContext.current))
 }

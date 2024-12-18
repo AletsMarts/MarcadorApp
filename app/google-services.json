@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461117289888",
+    "project_id": "marcadorapp-1b45e",
+    "storage_bucket": "marcadorapp-1b45e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461117289888:android:3f809c296e4fc42a2420c5",
+        "android_client_info": {
+          "package_name": "com.example.marcadorapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8U6t05wAlXWWddAukoW6YjRLGfrCPatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
