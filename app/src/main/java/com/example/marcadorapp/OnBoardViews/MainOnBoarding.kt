@@ -21,24 +21,24 @@ fun MainOnBoarding(navController: NavController, store: StoreBoarding){
 
     items.add(
         PageData(
-            R.raw.page1,
-            titulo ="Bienvenido a VolleyMate",
-            descripcion = "Descripcion 2 - Deslizar para continuar"
+            R.raw.ball,
+            titulo ="Bienvenido a VolleyScore",
+            descripcion = "Aplicacion para Volleyball"
         )
-    )
-
-    items.add(
-        PageData(R.raw.page2,
-            titulo = "Aplicacion Para registrar datos de sus partidos favoritos",
-            descripcion = "Descripción 2 - Deslizar para continuar")
     )
 
     items.add(
         PageData(R.raw.page3,
-            titulo = "Su aplicación de confianza",
-            descripcion = "Pulse para continuar"
-        )
+            titulo = "Registre sus partidos",
+            descripcion = "Registre y lleve un historial de sus partidos favoritos.")
     )
+
+    items.add(
+        PageData(R.raw.page2,
+            titulo = "¿Listo para comenzar?",
+            descripcion = "Pulse el boton para continuar")
+    )
+
 
     val pagerState = rememberPagerState(
         pageCount = items.size,

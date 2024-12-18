@@ -15,6 +15,13 @@ import com.example.marcadorapp.splashscreen.LogoView
 import com.example.marcadorapp.views.HomeView
 import com.example.marcadorapp.views.ScoreboardApp
 import com.example.marcadorapp.views.SplashScreen
+import com.example.marcadorapp.views.MainScreen
+import com.example.marcadorapp.views.RegisterMatchScreen
+import com.example.marcadorapp.views.SetWinnerScreen
+import com.example.marcadorapp.views.FinalResultsScreen
+import com.example.marcadorapp.views.FinalResultsScreen
+import com.example.marcadorapp.views.MatchRecordScreen
+import com.example.marcadorapp.views.MatchHistoryScreen
 
 @Composable
 fun NavManager(){
@@ -29,11 +36,29 @@ fun NavManager(){
         composable("onBoarding"){
             MainOnBoarding(navController,dataStore)
         }
-        composable("home"){
+        composable("ScoreView"){
             ScoreboardApp(navController)
         }
         composable("Splash"){
             LogoView(navController, store.value==true)
+        }
+        composable("home"){
+            MainScreen(navController)
+        }
+        composable("RegistrarPartido1") {
+            RegisterMatchScreen(navController)
+        }
+        composable("GanadorSet") {
+            SetWinnerScreen(navController)
+        }
+        composable("ResultadoFinalPartido") {
+            FinalResultsScreen(navController)
+        }
+        composable("HistorialPartidos") {
+            MatchHistoryScreen(navController)
+        }
+        composable("DetalleHistorialPartido") {
+            MatchRecordScreen(navController)
         }
     }
 }
