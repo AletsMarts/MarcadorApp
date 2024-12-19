@@ -67,7 +67,7 @@ fun LogoView(navController: NavController, store: Boolean) {
         )
 
         Text(
-            "By AletsMarts",
+            "By DDA_Team",
             style = TextStyle(
                 fontStyle = FontStyle.Italic,
                 fontWeight = FontWeight.Normal,

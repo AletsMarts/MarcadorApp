@@ -44,7 +44,7 @@ fun MatchHistoryScreen(navController: NavController) {
         MatchHistoryItem(
             team1 = "Equipo 1",
             team2 = "Equipo 2",
-            date = "12/12/2024",
+            date = "19/12/2024",
             score = "3  :  2",
             onClick = {navController.navigate("DetalleHistorialPartidos")}
         )

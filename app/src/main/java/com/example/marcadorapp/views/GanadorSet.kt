@@ -59,7 +59,7 @@ fun SetWinnerScreen(navController: NavController) {
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "1", // Texto dentro del círculo
+                text = "5", // Texto dentro del círculo
                 color = Color.Black,
                 style = MaterialTheme.typography.bodyLarge
             )
@@ -100,7 +100,7 @@ fun SetWinnerScreen(navController: NavController) {
                     .background(Color.White, shape = CircleShape)
             ) {
                 Text(
-                    text = "1",
+                    text = "3",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
@@ -113,7 +113,7 @@ fun SetWinnerScreen(navController: NavController) {
                     .background(Color.White, shape = CircleShape)
             ) {
                 Text(
-                    text = "0",
+                    text = "2",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
@@ -164,7 +164,7 @@ fun SetWinnerScreen(navController: NavController) {
                 modifier = Modifier.padding(16.dp)
             ) {
                 Text(
-                    text = "22",
+                    text = "0",
                     fontSize = 48.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
@@ -182,7 +182,7 @@ fun SetWinnerScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(70.dp))
         // Botón de confirmación
         Button(
-            onClick = { /* Acción de confirmación - poner la redireccion con el navManager */ },
+            onClick = { navController.navigate("ScoreView") },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp),

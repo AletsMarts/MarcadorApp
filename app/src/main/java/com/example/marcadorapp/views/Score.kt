@@ -1,6 +1,7 @@
 package com.example.marcadorapp.views
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -23,6 +24,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -160,9 +162,19 @@ fun ScoreboardApp(navController: NavController) {
                     fontWeight = FontWeight.Bold,
                     color = Color.Red
                 )
+                Column(verticalArrangement = Arrangement.Bottom,
+                    horizontalAlignment = Alignment.End,) {
+                    Button(onClick = { navController.navigate("GanadorSet") }) {
+                        Text(
+                            "VER RESULTADOS DEL PARTIDO"
+                        )
+                    }
+                }
             }
         }
+
     }
+
 }
 
 @Composable
@@ -191,4 +203,13 @@ fun TeamPanel(teamScore: Int, onIncrement: () -> Unit, onDecrement: () -> Unit) 
             Text(text = "-", fontSize = 24.sp)
         }
     }
+
+
+}
+
+@Preview(showBackground = true)
+@Composable
+fun previewScore(){
+    ScoreboardApp(navController = NavController(LocalContext.current))
+
 }

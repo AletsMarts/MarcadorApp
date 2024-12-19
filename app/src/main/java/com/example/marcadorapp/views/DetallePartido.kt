@@ -61,7 +61,7 @@ fun MatchRecordScreen(navController: NavController) {
         }
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Fecha: 12/12/2024",
+            text = "Fecha: 19/12/2024",
             fontSize = 16.sp,
             color = Color.Gray
         )

@@ -1,5 +1,4 @@
 package com.example.marcadorapp.views
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -11,7 +10,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.marcadorapp.R // Asegúrate de que la imagen está en res/drawable y de que el nombre del recurso es correcto.
-
 @Composable
 fun AboutScreen(navController: NavController) {
     Column(

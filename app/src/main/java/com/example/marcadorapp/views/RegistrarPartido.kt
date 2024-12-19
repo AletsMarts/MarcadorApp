@@ -24,7 +24,7 @@ fun RegisterMatchScreen(navController: NavController) {
     // Variables para almacenar nombres de los equipos
     var team1 by remember { mutableStateOf("") }
     var team2 by remember { mutableStateOf("") }
-
+    var showError by remember { mutableStateOf(false) }
 
     // Layout principal
     Column(
@@ -59,7 +59,10 @@ fun RegisterMatchScreen(navController: NavController) {
         // Campo de texto para Equipo 1
         OutlinedTextField(
             value = team1,
-            onValueChange = { team1 = it },
+            onValueChange = {
+                team1 = it
+                showError = false // Ocultar el mensaje de error al escribir
+            },
             placeholder = { Text("Nombre equipo 1") },
             modifier = Modifier
                 .fillMaxWidth()
@@ -71,7 +74,10 @@ fun RegisterMatchScreen(navController: NavController) {
         // Campo de texto para Equipo 2
         OutlinedTextField(
             value = team2,
-            onValueChange = { team2 = it },
+            onValueChange = {
+                team2 = it
+                showError = false // Ocultar el mensaje de error al escribir
+            },
             placeholder = { Text("Nombre equipo 2") },
             modifier = Modifier
                 .fillMaxWidth()
@@ -80,9 +86,24 @@ fun RegisterMatchScreen(navController: NavController) {
                 .background(Color(0xFF99E0F4))
         )
 
+        // Mostrar mensaje de error si los campos están vacíos
+        if (showError) {
+            Text(
+                text = "Los campos están vacíos",
+                color = Color.Red,
+                fontSize = 14.sp,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+        }
 
         Button(
-            onClick = { navController.navigate("ScoreView")},
+            onClick = {
+                if (team1.isBlank() || team2.isBlank()) {
+                    showError = true // Mostrar mensaje de error
+                } else {
+                    navController.navigate("ScoreView")
+                }
+            },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp)
