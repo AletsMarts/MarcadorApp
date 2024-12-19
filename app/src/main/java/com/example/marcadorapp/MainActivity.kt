@@ -11,7 +11,9 @@ import androidx.compose.ui.Modifier
 import com.example.marcadorapp.navigation.NavManager
 import com.example.marcadorapp.splashscreen.LogoView
 import com.example.marcadorapp.ui.theme.MarcadorAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

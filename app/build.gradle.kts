@@ -4,6 +4,8 @@ plugins {
     //--FIREBASE
     //id("com.android.application")
     id("com.google.gms.google-services")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -53,9 +55,23 @@ android {
 }
 
 dependencies {
+    //  dependencias Room --------------------------------------------------------------------------------------------
+    // Room
+    val roomVersion = "2.5.1"
+    implementation("androidx.room:room-ktx:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
+
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.46.1")
+    kapt("com.google.dagger:hilt-compiler:2.46.1")
+
+    // Swipe
+    implementation("me.saket.swipe:swipe:1.1.1")
+
+
+
     //--OnBoarding
     implementation ("com.google.accompanist:accompanist-pager:0.15.0")
-
     //--Navigation
     implementation("androidx.navigation:navigation-compose:2.8.5")
     //--DataStore
